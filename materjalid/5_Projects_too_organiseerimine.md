@@ -1,6 +1,6 @@
 # Töö organiseerimine (GitHub Projects)
 
-[GitHub Projects](8_Moistete_ja_toovahendite_selgitused.md) aitab jälgida töö edenemist. On esriti kasulik just suuremate õppematerjalide korral ning siis kui projektiga on seotud ka kindlad tähtajad.
+[GitHub Projects](8_Moistete_ja_toovahendite_selgitused.md#github-projects) aitab jälgida töö edenemist. On esriti kasulik just suuremate õppematerjalide korral ning siis kui projektiga on seotud ka kindlad tähtajad.
 
 ## Tüüpilised veerud mille lisamist kaaluda:
 - **Ideed**
@@ -9,4 +9,4 @@
 - **Review**
 - **Done**
 
-Iga kaart tabelis on seotud [Issue või Pull Requestiga](8_Moistete_ja_toovahendite_selgitused.md).
+Iga kaart tabelis on seotud [Issue](8_Moistete_ja_toovahendite_selgitused.md#github-issues) või [Pull Requestiga](8_Moistete_ja_toovahendite_selgitused.md#pull-request).
