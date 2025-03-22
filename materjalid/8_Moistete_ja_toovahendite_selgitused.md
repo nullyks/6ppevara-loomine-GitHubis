@@ -8,13 +8,18 @@
 - [GitHub Projects](#github-projects)
 - [GitHub Releases](#github-releases)
 - [Harude liitmine (merge)](#harude-liitmine-merge)
+- [Kohalik hoidla](#kohalik-hoidla)
 - [Konflikt harude liitmisel (merge conflict)](#konflikt-harude-liitmisel-merge-conflict)
+- [Origin](#origin)
 - [Pull](#pull)
 - [Pull Request](#pull-request)
 - [Push](#push)
 - [Repositooriumi Forkimine](#repositooriumi-forkimine)
 - [Repositooriumi haru (branch)](#repositooriumi-haru-branch)
 - [Repositooriumi kloonimine](#repositooriumi-kloonimine)
+- [Staging area](#staging-area)
+- [Töökataloog](#töökataloog)
+- [Upstream](#upstream)
 
 ## GitHub Issues
 GitHub Issues ehk probleemikirjeldused on tööriist, mille abil saab arendustöö käigus üles märkida ideid, ettepanekuid, puudusi või parandamist vajavaid kohti. Iga uus sisuplokk, parandus või täiendus võiks koostöise arenduse puhul alata vastava Issue loomisega. See aitab hoida töövoogu läbipaistvana ja struktureerituna, andes selge ülevaate, mille kallal keegi töötab või millised ideed on veel realiseerimata. Issue ise on lihtne tekstipõhine kirjeldus, millele saab lisada pealkirja, üksikasjaliku selgituse ning soovi korral ka pilte või linke.
@@ -111,6 +116,32 @@ CHANGELOG.md on dokument, kuhu kirjeldatakse projekti muudatusi versioonide kaup
 
 Õppematerjalide arenduses võimaldab CHANGELOG.md dokumenteerida sisulisi täiendusi: näiteks kui lisatakse uus teema, parandatakse näidete vigu või uuendatakse viiteid. See teeb koostöö läbipaistvamaks ja võimaldab õpetajatel või õppijatel kiirelt tuvastada, mis on uues versioonis teisiti. Kuigi Git versioonihaldus salvestab kõik commit’id, on CHANGELOG.md loetavam ja suunatud tavakasutajale, mitte ainult tehnilisele jälgimisele.
 
+## Origin
+Origin on Gitis vaikimisi kasutatav nimi kaug-repositooriumi (remote repository) kohta, millest repositoorium algselt klooniti või millega see esmakordselt ühendati. Kui teed GitHubist repositooriumi koopia oma arvutisse käsuga git clone, siis määratakse selle kaug-repositooriumi nimeks automaatselt origin. See tähistab seost sinu kohaliku repositooriumi ja GitHubi hoidla vahel ning võimaldab Gitil teada, kuhu peaks näiteks git push käsu korral muudatused saatma ja kust git pull käsu abil uuendusi tooma.
+
+Praktikas tähendab see, et kui töötad lokaalselt ja kirjutad käsu git push origin main, siis sa saadad oma main haru muudatused tagasi GitHubis asuvasse hoidlaserverisse, mille nimi on origin. Kui töötad kellegi teise projektiga, mille oled forkinud, võib origin tähistada sinu isiklikku koopiat ning projekti algne hoidla saab nimeks upstream. Selline nimeeristus võimaldab paindlikku ja mitmetasandilist koostööd.
+
+## Upstream
+Upstream on Gitis tavaliselt kasutatav nimi kaug-repositooriumi kohta, millest algne projekt pärineb – eriti siis, kui oled selle forkinud. Kui teed GitHubis kellegi teise repositooriumist forki, saad selle isikliku koopiaga töötada oma GitHubi kontol (tavaliselt origin). Samas säilib vajadus hoida side ka algse projektiga – seda kaug-repositooriumi nimetataksegi tavaliselt upstream. See võimaldab tuua muudatusi algsest projektist enda koopiasse ja vajadusel esitada tagasi oma parandused või täiendused.
+
+Tüüpiline töövoog näeb välja nii: teed muudatused oma origin hoidlas, lükkad need üles GitHubi ja avad pull requesti upstream hoidla suunas, et pakkuda oma täiendusi algprojekti. Samuti saad git pull upstream main abil tuua värskeid muudatusi originaalhoidlast, et oma töö sellega sünkroonis hoida. See struktuur on väga kasulik õppematerjalide koostöös, kus ühe repositooriumi baasil luuakse erinevaid täiendatud või kohandatud versioone.
+
+## Kohalik hoidla
+Kohalik hoidla (ingl local repository) on sinu arvutis olev koopia Git-repositooriumist, mis sisaldab kogu projekti faile ja versiooniajalugu. Kui sa kloonid mõne GitHubi repositooriumi käsuga git clone, luuakse sinu arvutisse täisfunktsionaalne lokaalne hoidla. See tähendab, et saad teha muudatusi, salvestada (commit’ida), vaadata varasemaid versioone ning isegi harudega töötada ilma internetiühenduseta. Kohalik hoidla koosneb kahest osast: töökataloogist, kus on aktiivsed failid, ja .git kataloogist, mis sisaldab versiooniajalugu ja konfiguratsiooni.
+
+Kohalik hoidla on oluline Git töövoos, sest just seal tehakse kõik sisulised muudatused enne, kui need GitHubi kaughoidlasse saadetakse (push). Samuti saab sealt tuua (pull) muudatusi teistelt arendajatelt ja lahendada konflikte. Kohalik hoidla võimaldab turvaliselt katsetada ja töödelda sisu nii, et see ei mõjuta teiste tööd enne, kui oled muudatused selgelt ja teadlikult jaganud.
+
+## Töökataloog
+
+Töökataloog (ingl working directory või working tree) on osa kohalikust Git-hoidlast, kus kasutaja tegelikult töötab – see on kaust sinu arvutis, mis sisaldab projekti aktiivseid faile. Töökataloogis saab faile avada, muuta, kustutada või lisada uusi. Kui teed repositooriumi klooni või alustad uut Git-projekti, luuakse see töökataloog automaatselt. Selles tehtavad muudatused ei lähe kohe versiooniajalukku – need tuleb esmalt lisada staging area-le ja seejärel commit’ida, et need jõuaksid Git-i jälgitavusse.
+
+Töökataloog on Git-projekti kõige nähtavam osa, millega arendaja või õppematerjali koostaja igapäevaselt kokku puutub. Kui töökataloog erineb viimasest commit’ist, siis Git oskab neid erinevusi jälgida ning annab märku, millised failid on muutunud. See võimaldab teha muudatused kontrollitult ja selgelt, eraldades veel tööjärgus olevad failid juba salvestatud versioonidest. Töökataloogi kaudu toimub kogu praktiline töö: seal kirjutatakse tekste, lisatakse pilte, parandatakse vigu või struktuuri.
+
+## Staging area
+Staging area (ettevalmistusala) on Git-hoidla osa, kuhu kasutaja lisab muudatused enne nende salvestamist repositooriumi versiooniajalukku (commit). See on justkui vahepeatus töövoos: kui oled töökataloogis faile muutnud, saad käsuga git add valida, millised neist muudatustest soovid järgmiseks commit’iks ette valmistada. See annab kontrolli selle üle, et commit oleks sisuliselt loogiline ja ühtne, sisaldades ainult konkreetse ülesandega seotud muudatusi.
+
+Staging area võimaldab arendajal (või õppematerjali koostajal) koostada oma muudatused läbimõeldult – näiteks teha esmalt keeleparandused ja hiljem lisada uued osad, salvestades need kahe erineva commit’ina. Mõned graafilised tööriistad (nt GitHub Desktop, VS Code) peidavad staging area visuaalselt lihtsustatud töövoo taha, kuid Git ise töötab alati selle mehhanismi abil. See on Git-i üks olulisemaid omadusi, mis eristab seda paljudest teistest versioonihaldussüsteemidest.
+
 ## Kasutatud allikad: 
 * *https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues*
 
@@ -171,3 +202,15 @@ CHANGELOG.md on dokument, kuhu kirjeldatakse projekti muudatusi versioonide kaup
 * *https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases*
 
 * *https://github.com/github/feedback/discussions/8101*
+
+* *https://docs.github.com/en/get-started/using-git/about-remote-repositories*
+
+* *https://git-scm.com/docs/git-remote*
+
+* *https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes*
+
+* *https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository*
+
+* *https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository*
+
+* *https://www.atlassian.com/git/tutorials/saving-changes/git-add*
