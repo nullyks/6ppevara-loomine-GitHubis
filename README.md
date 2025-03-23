@@ -44,13 +44,13 @@ Koostööl põhineva arenduse korral tee muudatused alati [**eraldi harus** (bra
 - [**upstream**](materjalid/8_Moistete_ja_toovahendite_selgitused.md#upstream) hoidla `main` [haruga](materjalid/8_Moistete_ja_toovahendite_selgitused.md#repositooriumi-haru-branch) (kui panustad kellegi teise projekti).
 
 ## Täpsemad tegevused õppematerjali loomisel
-* [Kuidas alustada?](materjalid/1_Kuidas_alustada.md) 
-* [Tööülesannete loomine ja jagamine](materjalid/2_Tooulesanded_ja_suhtlus.md) 
-* [Harude kasutamine](materjalid/3_Harude_kasutamine.md) 
-* [Pull Requestid](materjalid/4_Pull_Requestid.md) 
-* [Töö organiseerimine Projects abil](materjalid/5_Projects_too_organiseerimine.md) 
-* [Materjalide testimine ja tagasiside](materjalid/6_Tagasiside_ja_testimine.md) 
-* [Materjalide avaldamine ja versioonid](materjalid/7_Versioonid_ja_avaldamine.md) 
+1. [Kuidas alustada?](materjalid/1_Kuidas_alustada.md) 
+2. [Tööülesannete loomine ja jagamine](materjalid/2_Tooulesanded_ja_suhtlus.md) 
+3. [Harude kasutamine](materjalid/3_Harude_kasutamine.md) 
+4. [Pull Requestid](materjalid/4_Pull_Requestid.md) 
+5. [Töö organiseerimine Projects abil](materjalid/5_Projects_too_organiseerimine.md) 
+6. [Materjalide testimine ja tagasiside](materjalid/6_Tagasiside_ja_testimine.md) 
+7. [Materjalide avaldamine ja versioonid](materjalid/7_Versioonid_ja_avaldamine.md) 
 
 ## Stiilijuhend ja vahendid sisu koostamisel  
 * [Stiilijuhend](materjalid/9_Uldine_stiilijuhend_ja_töövahendid.md)
