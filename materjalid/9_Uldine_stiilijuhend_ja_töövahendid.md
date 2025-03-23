@@ -158,6 +158,7 @@ $$
 ```
 
 Näeb välja nii:
+
 $$
 R = \frac{U}{I}
 $$
