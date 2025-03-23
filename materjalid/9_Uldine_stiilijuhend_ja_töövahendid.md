@@ -243,7 +243,7 @@ Kasuta küsimusi või tegevuspõhiseid üleskutseid: "Mõtle, kuidas vool liigub
 |-------------------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | **Tekstiredaktorid**    | [Visual Studio Code](https://code.visualstudio.com/)                  | Laiendatav töövahend MarkDowni, Git-i ja GitHubi haldusega. Sobib nii õpetajatele kui arendajatele. |
 |                         | [Typora](https://typora.io/) *(tasuline)*                              | Visuaalne WYSIWYG MarkDown-redaktor, väga lihtne kasutada. Sobib mittetehnilistele kasutajatele.         |
-|                         | [MarkText](https://marktext.app/)                                     | Avatud lähtekoodiga visuaalne MarkDowni redaktor. Hea alternatiiv Typorale.                                |
+|                         | [ghostwriter](https://ghostwriter.kde.org/)                                     | Avatud lähtekoodiga visuaalne MarkDowni redaktor. Hea alternatiiv Typorale.                                |
 |                         | [Obsidian](https://obsidian.md/)                                      | Märkmepõhine MarkDowni töövahend, sobib õppematerjalide sisuloomeks ja isiklikeks märkmeteks.             |
 |                         | Tavaline tekstiredaktor (nt Notepad++, Kate)                          | Võimalik kasutada, kui eelistad lihtsust.                                            |
 | **Git/GitHub tööriistad** | [GitHub Desktop](https://desktop.github.com/)                        | Lihtsustatud graafiline liides GitHubi haldamiseks – sobib algajatele.                                    |
