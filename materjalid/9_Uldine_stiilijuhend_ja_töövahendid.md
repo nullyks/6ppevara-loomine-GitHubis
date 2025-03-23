@@ -250,7 +250,7 @@ Kasuta küsimusi või tegevuspõhiseid üleskutseid: "Mõtle, kuidas vool liigub
 |                         | [GitKraken](https://www.gitkraken.com/)                               | Visuaalne Git-kliendi rakendus, sobib keerukamate projektide haldamiseks.                                 |
 |                         | [Git](https://git-scm.com/) käsurealt                                 | Võimas ja paindlik, vajalik edasijõudnud kasutajale või töövoo automatiseerimiseks.                              |
 | **Markdown eelvaade ja testimine** | VS Code laiendus „Markdown Preview Enhanced“             | Reaalajas eelvaade koos LaTeX toe ja diagrammide toega.                                                    |
-|                         | [Dillinger](https://dillinger.io/)                                    | Veebipõhine MarkDown-redaktor eelvaatega, sobib kiireks katsetamiseks.                                     |
+|                         | [StackEdit](https://stackedit.io/)                                    | Veebipõhine MarkDown-redaktor eelvaatega, sobib kiireks katsetamiseks.                                     |
 | **LaTeX ja valemid**    | [MathJax](https://www.mathjax.org/)                                   | LaTeX-i renderdamise mootor.                          |
 |                         | [KaTeX](https://katex.org/)                                           | Kiirem ja kergem alternatiiv MathJaxile.                                 |
 | **Diagrammid ja joonised** | [draw.io / diagrams.net](https://app.diagrams.net/)               | Intuitiivne skeemide joonistamine. Salvestab pilte otse `.png` kujul.                                      |
